@@ -9,4 +9,17 @@ i.setAtribute("class","fa fa-heart");
 i.setAtribute("arial-hidden","true");
 
 var nodoNombre = document.createTextNode(nombreFF +" escribió:"); nodoPosteo = document.createTextNode(contenidoFF);
+contenedorNombre.appendChild(nodoNombre);
+contenedorPost.appendChild(nodoPosteo);
+
+nuevoPost.appendChild(contenedorNombre);
+nuevoPost.appendChild(contenedorPost);
+nuevoPost.appendChild(parrafCorazon);
+nuevoPost.appendChild(separacion);
+
+i.addEventListener("click", function(){
+	i.classList.toggle('rojo');
+});
+
+
 }
